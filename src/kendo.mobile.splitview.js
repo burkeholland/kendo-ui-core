@@ -72,18 +72,18 @@ var __meta__ = {
             that.transition = kendo.attrValue(element, "transition");
             kendo.mobile.ui.View.prototype._layout.call(this);
             kendo.mobile.init(this.header.add(this.footer));
-            that.content.addClass("km-splitview");
+            that.element.addClass("km-splitview");
         },
 
         _style: function () {
             var style = this.options.style,
-                content = this.content,
+                element = this.element,
                 styles;
 
             if (style) {
                 styles = style.split(" ");
                 $.each(styles, function () {
-                    content.addClass("km-split-" + this);
+                    element.addClass("km-split-" + this);
                 });
             }
         },
