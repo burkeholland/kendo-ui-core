@@ -73,6 +73,7 @@ var __meta__ = {
             kendo.mobile.ui.View.prototype._layout.call(this);
             kendo.mobile.init(this.header.add(this.footer));
             that.element.addClass("km-splitview");
+            that.content.addClass("km-split-content");
         },
 
         _style: function () {
